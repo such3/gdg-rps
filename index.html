@@ -198,7 +198,7 @@ async function run(practice){
   setHand(p,"pop");
   const [x,y]=ringCenter();confetti(30,x,y,0,360,.6);
   $("we").innerHTML=svg((p+1)%3);$("te").innerHTML=svg(p);$("le").innerHTML=svg((p+2)%3);
-  await wait(800);
+  await wait(1600);
   $("say").textContent="PC played "+NAMES[p]+"!";
   if($("cards").checked)$("res").classList.add("on");
   if(practice){$("hint").textContent="Practice done! Nobody sits down. Practise again, or start for real."}
